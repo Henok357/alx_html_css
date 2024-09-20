@@ -24,26 +24,26 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 10px; /* Adjust this as needed for spacing */
+    padding: 10px; 
 }
 
-/* Style for the <ul> element to position it on the top-right */
+
 ul {
     position: absolute;
     top: 0;
     right: 0;
     display: flex;
-    list-style: none;  /* Removes the bullet points */
-    gap: 20px;         /* Adds space between the items */
-    padding: 10px;     /* Adjusts space from the edges */
-    margin: 0;         /* Removes default margin from the <ul> */
+    list-style: none;  
+    gap: 20px;         
+    padding: 10px;     
+    margin: 0;         
 }
 
-/* Style for the <li> and <a> elements inside the <ul> */
+
 ul li a {
     text-decoration: none;
-    color: white;      /* Sets the text color to white */
-    font-size: 16px;   /* Adjusts the font size */
+    color: white;      
+    font-size: 16px;   
     padding: 10px;
 }
 
@@ -54,63 +54,62 @@ ul li {
 
 }
 
-/* Style for the main container */
+
 div {
     position: relative;
-    text-align: center;  /* Centers content horizontally */
+    text-align: center;  
 }
 
-/* Style for the "Get Schooled" heading */
+
 h1 {
-    font-size: 48px;          /* Adjust for visual similarity to 684x151 dimensions */
-    color: white;             /* White color for text */
+    font-size: 48px;          
+    color: white;             
     width: 684px;
     height: 151px;
-    position: absolute;       /* Use absolute positioning */
-    top: 60px;                /* Adjust this value to move it up or down */
+    position: absolute;       
+    top: 60px;                
     left: 50%;
-    transform: translateX(-50%); /* Centers the heading horizontally */
+    transform: translateX(-50%); 
 }
 
-/* Container for the spans (SMILES, GRIN, LAUGH) */
 div .buttons {
     position: absolute;
-    top: 160px;               /* Adjust this to move the spans closer to "Get Schooled" */
+    top: 160px;               
     left: 50%;
-    transform: translateX(-50%); /* Centers the buttons horizontally */
-    display: flex;            /* Align spans side by side */
-    gap: 30px;                /* Adjust spacing between the buttons */
+    transform: translateX(-50%); 
+    display: flex;            
+    gap: 30px;                
 }
 
-/* Style for the spans (SMILES, GRIN, LAUGH) */
+
 div .buttons span {
-    font-size: 24px;          /* Adjust for visual similarity to 50x20 dimensions */
-    color: white;             /* White color for text */
+    font-size: 24px;          
+    color: white;             
 }
 
-/* Style for the "REGISTER FOR FREE" button */
+
 button {
-    background-color: #C271FF;  /* Hex color for button background */
-    color: white;               /* White text for button */
-    font-size: 18px;            /* Adjust font size for better readability */
+    background-color: #C271FF;  
+    color: white;               
+    font-size: 18px;            
     width: 162px;
     height: 44px;
-    border: none;               /* Removes default border */
-    border-radius: 5px;         /* Optional: adds slight rounding to the button */
-    margin-top: 20px;           /* Space between the spans and button */
-    cursor: pointer;            /* Pointer cursor on hover */
+    border: none;               
+    border-radius: 5px;         
+    margin-top: 20px;           
+    cursor: pointer;            
 }
 
 button:hover {
-    background-color: #a954e6;  /* Darken the button on hover for interactivity */
+    background-color: #a954e6;  
 }
 
-/* Footer (placeholder) */
+
 footer {
     margin-top: auto;
 }
 
-/* Responsiveness for mobile */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
