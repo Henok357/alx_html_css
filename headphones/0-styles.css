@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url('Images/headphones.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.nav-list a {
+    color: #FFFFFF; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.nav-list a:hover {
+    opacity: 0.7; 
+}
+
+
+.first-page-heading h1 {
+    position: absolute;
+    height: 40px;
+    left: 4.55%;
+    right: 4.71%;
+    top: calc(50% - 40px/2 - 136.5px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.paragraph-one p {
+    position: absolute;
+    height: 20px;
+    left: 22.14%;
+    right: 22.14%;
+    top: calc(50% - 20px/2 - 106.5px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #eb1f1f;
+}
+
+
+.paragraph-two p {
+    position: absolute;
+    height: 104px;
+    left: 0;
+    right: 0;
+    top: calc(50% - 104px/2 + 104.5px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px; 
+    text-align: center;
+    color: #f1e7e7;
+}
+
+.call-to-action {
+    position: absolute;
+    top: calc(50% - 104px/2 + 50px);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.call-to-action-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+}
