@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones</title>
+    <link href="Images/styles.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Source Sans Pro', sans-serif; 
+            background-image: url('../images/headphones.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            justify-content: flex-end; /* Fixed the typo here */
+        }
+
+        .nav-list a {
+            color: #FFFFFF; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+
+        .nav-list a:hover {
+            opacity: 0.7; 
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .bar {
+            height: 3px;
+            width: 30px;
+            margin: 4px 0;
+            background-color: #FFFFFF;
+        }
+
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+            }
+
+            #menu-toggle:checked + .hamburger + nav .nav-list {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        .first-page-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20%;
+        }
+
+        .first-page-heading h1 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            color: #FFFFFF;
+        }
+
+        .paragraph-one p {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        .call-to-action-button {
+            background-color: #FF6565;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+            margin-top: 20px; 
+        }
+
+        .call-to-action-button:hover,
+        .call-to-action-button:active {
+            opacity: 0.9;
+        }
+
+        .paragraph-two p {
+            text-align: center;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FFFFFF;
+            margin-top: 80px; 
+            word-wrap: break-word;
+        }
+
+        /* New section styles */
+        #what-we-do {
+    background-color: #FFFFFF; /* White background */
+    color: #000000; /* Black text */
+    padding: 20px; /* Optional padding */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center align items horizontally */
+    text-align: center; /* Center text */
+}
+
+.what-we-do-heading {
+    text-align: center; /* Center the heading */
+}
+    .lower-content-page-two {
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center the items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line if necessary */
+    gap: 20px; /* Space between items */
+}
+
+.lower-content-page-two > div {
+    flex: 0 1 220px; /* Allow items to grow and shrink, and set a base width */
+    text-align: center; /* Center text in each item */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background color for visibility */
+    padding: 10px; /* Optional: Add padding for spacing within items */
+    border-radius: 8px; /* Optional: Round the corners */
+}
+
+}
+
+}
+    </style>
+</head>
+<body>
+    <section class="background-section">
+        <header class="header">
+            <img src="Images/logo_headphones.png" alt="headphones">
+            <input type="checkbox" id="menu-toggle">
+            <label class="hamburger" for="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#what-we-do">What we do</a></li>
+                    <li><a href="#our-results">Our results</a></li>
+                    <li><a href="#contact-us">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="first-page-main">
+            <div class="paragraph-one">
+                <h1 class="main-title">Lorem ipsum dolor sit amet lorem ipsum</h1>
+                <p class="paragraph-one">Lorem ipsum dolor sit amet lorem ipsum dolor sit</p>
+                <button class="call-to-action-button">CALL TO ACTION</button>
+                <p class="paragraph-two">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br>
+                    nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </main>
+    </section>
+    <section>
+        <main id="what-we-do">
+            <div class="upper-content-page-two">
+                <h1 class="what-we-do-heading">What we do...</h1>
+                <p class="what-we-do-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud <br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure <br> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="lower-content-page-two">
+                <div class="sound-frecuency">
+                    <img src="sound-frecuency.png">
+                    <h3 class="small-heading">Lorem ipsum</h3>
+                    <p class="small-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="video-image">
+                    <img src="video.png">
+                    <h3 class="small-heading">Lorem ipsum</h3>
+                    <p class="small-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="music-image">
+                    <img src="music.png">
+                    <h3 class="small-heading">Lorem ipsum</h3>
+                    <p class="small-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="hearing-immage">
+                    <img src="hearing.png">
+                    <h3 class="small-heading">Lorem ipsum</h3>
+                    <p class="small-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
