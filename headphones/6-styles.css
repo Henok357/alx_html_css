@@ -1,0 +1,23 @@
+.pentagon-container {
+        display: flex;            
+        justify-content: center; 
+        gap: 20px;               
+    }
+
+    .pentagon {
+        width: 150px;            
+        height: 150px;         
+        background-image: url('../images/pentagone.png'); 
+        background-size: cover;  
+        background-position: center; 
+        display: flex;           
+        justify-content: center; 
+        align-items: center;     
+        color: white;          
+        text-align: center;     
+        border-radius: 5px;    
+    }
+
+    .pentagon-text {
+        font-size: 16px;      
+    }
