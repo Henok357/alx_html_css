@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="4-styles.css">
+    <title>Your Website Title</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url('Images/headphones.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.nav-list a {
+    color: #FFFFFF; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.nav-list a:hover {
+    opacity: 0.7; 
+}
+
+.first-page-heading h1 {
+    position: absolute;
+    height: 40px;
+    left: 4.55%;
+    right: 4.71%;
+    top: calc(50% - 40px/2 - 136.5px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.paragraph-one p {
+    position: absolute;
+    height: 20px;
+    left: 22.14%;
+    right: 22.14%;
+    top: calc(50% - 20px/2 - 106.5px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #eb1f1f;
+}
+
+.paragraph-two p {
+    position: absolute;
+    height: 104px;
+    left: 0;
+    right: 0;
+    top: calc(50% - 104px/2 + 104.5px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px; 
+    text-align: center;
+    color: #f1e7e7;
+}
+
+.call-to-action {
+    position: absolute;
+    top: calc(50% - 104px/2 + 50px);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.call-to-action-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+}
+
+#what-we-do {
+    background-color: #FFFFFF; 
+    color: #000000; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.lower-content-page-two > div {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.7; 
+}
+
+.lower-content-page-two > div:hover {
+    transform: scale(1.1); 
+    opacity: 1; 
+}
+
+#our-results {
+    padding: 20px; 
+}
+
+.results-row {
+    display: flex;
+    justify-content: space-around; 
+}
+
+.results-row .result-item {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.7; 
+}
+
+.results-row .result-item:hover {
+    transform: scale(1.1); 
+    opacity: 1; 
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: white; 
+    padding: 20px; 
+}
+
+.contact-heading {
+    font-size: 24px; 
+    margin-bottom: 20px;
+}
+
+.contact-box {
+    width: 335px;        
+    height: 373px;       
+    border: 2px solid #ddd; 
+    padding: 20px;       
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    background-color: #fff; 
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%; 
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+textarea {
+    height: 80px; 
+    resize: none; 
+}
+
+.cta-button {
+    width: 162px; 
+    height: 44px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    align-self: center;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; 
+}
+
+.footer {
+    width: 100%; 
+    height: 249px;
+    background-color: #071629;
+    color: rgba(255, 255, 255, 0.35); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading {
+    width: 114.12px;
+    height: 12.06px;
+}
+
+.footer-copy {
+    width: 98px;
+    height: 15px;
+    opacity: 0.35; 
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 10px; 
+    width: 130px;
+    height: 30px;
+}
+    </style>
+
+</head>
+<body>
+    <div class="nav-list">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="first-page-heading">
+        <h1>Welcome to Our Site</h1>
+    </div>
+
+    <div class="paragraph-one">
+        <p>Your tagline or introductory text here.</p>
+    </div>
+
+    <div class="paragraph-two">
+        <p>More information about what you do.</p>
+    </div>
+
+    <div class="call-to-action">
+        <button class="call-to-action-button">Get Started</button>
+    </div>
+
+    <div id="what-we-do">
+        <h2>What We Do...</h2>
+        <div class="lower-content-page-two">
+            <div class="sound-frequency">Sound Frequency</div>
+            <div class="video-image">Video Image</div>
+            <div class="music-image">Music Image</div>
+            <div class="hearing-image">Hearing Image</div>
+        </div>
+    </div>
+
+    <div id="our-results">
+        <h2>Our Results</h2>
+        <div class="results-row">
+            <div class="result-item">Result 1</div>
+            <div class="result-item">Result 2</div>
+            <div class="result-item">Result 3</div>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-section">
+            <h2 class="contact-heading">Contact Us</h2>
+            <div class="contact-box">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message"></textarea>
+                </div>
+                <button class="cta-button">Send Message</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-brand">
+            <h3 class="footer-heading">Your Brand</h3>
+            <p class="footer-copy">© 2024 Your Brand. All rights reserved.</p>
+        </div>
+        <div class="footer-social-icons">
+            
+        </div>
+    </footer>
+</body>
+</html>
