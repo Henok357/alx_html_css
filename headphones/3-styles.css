@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url('Images/headphones.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.nav-list a {
+    color: #FFFFFF; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.nav-list a:hover {
+    opacity: 0.7; 
+}
+
+
+.first-page-heading h1 {
+    position: absolute;
+    height: 40px;
+    left: 4.55%;
+    right: 4.71%;
+    top: calc(50% - 40px/2 - 136.5px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.paragraph-one p {
+    position: absolute;
+    height: 20px;
+    left: 22.14%;
+    right: 22.14%;
+    top: calc(50% - 20px/2 - 106.5px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #eb1f1f;
+}
+
+
+.paragraph-two p {
+    position: absolute;
+    height: 104px;
+    left: 0;
+    right: 0;
+    top: calc(50% - 104px/2 + 104.5px);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px; 
+    text-align: center;
+    color: #f1e7e7;
+}
+
+.call-to-action {
+    position: absolute;
+    top: calc(50% - 104px/2 + 50px);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.call-to-action-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+}
+
+#what-we-do {
+    background-color: #FFFFFF; 
+    color: #000000; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.what-we-do-heading {
+    text-align: center; 
+}
+
+.lower-content-page-two {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.sound-frecuency,
+.video-image,
+.music-image,
+.hearing-immage {
+    flex: 1; 
+    min-width: 200px; 
+    text-align: center; 
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content */
+    background-color: white; /* White background */
+    padding: 20px; /* Padding for the section */
+}
+
+/* Contact Heading */
+.contact-heading {
+    font-size: 24px; /* Font size for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Contact Box Styling */
+.contact-box {
+    width: 335px;         /* Width of the box */
+    height: 373px;       /* Height of the box */
+    border: 2px solid #ddd; /* Optional: Add a border */
+    padding: 20px;       /* Padding inside the box */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space between children */
+    background-color: #fff; /* White background for the box */
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Form Input Fields */
+input[type="text"], input[type="email"], textarea {
+    width: 100%; /* Full width */
+    padding: 5px; /* Padding inside input */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Box sizing */
+}
+
+/* Textarea Styling */
+textarea {
+    height: 80px; /* Height for textarea */
+    resize: none; /* Disable resizing */
+}
+
+/* Call to Action Button */
+.cta-button {
+    width: 162px; /* Width of the button */
+    height: 44px; /* Height of the button */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    align-self: center; /* Center button */
+}
+
+/* Button Hover Effect */
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
